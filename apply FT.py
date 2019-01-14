@@ -2,7 +2,7 @@ import numpy as np
 from scipy.io import wavfile
 import matplotlib.pyplot as plt
 # Read the input file
-sampling_freq, audio = wavfile.read('input_freq.wav')
+sampling_freq, audio = wavfile.read(r"input_freq.wav")
 # Normalize the values
 audio = audio / (2.**15)
 # Extract length
