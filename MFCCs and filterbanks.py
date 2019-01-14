@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.io import wavfile 
 from python_speech_features import mfcc, logfbank
 # Read input sound file
-sampling_freq, audio = wavfile.read("input_freq.wav")
+sampling_freq, audio = wavfile.read(r"input_freq.wav")
 # Extract MFCC and Filter bank features
 mfcc_features = mfcc(audio, sampling_freq)
 filterbank_features = logfbank(audio, sampling_freq)
